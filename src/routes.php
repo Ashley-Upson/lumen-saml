@@ -5,7 +5,7 @@
  */
 
 Route::group([
-        'namespace' => '\KingStarter\LaravelSaml\Http\Controllers'
+        'namespace' => '\AshleyUpson\LumenSaml\Http\Controllers'
     ], function () {
         Route::get('/saml/idp/metadata', 'SamlIdpController@metadata')->name('saml.idp.metadata');
     }

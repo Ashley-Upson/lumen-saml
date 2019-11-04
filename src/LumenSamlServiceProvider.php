@@ -1,13 +1,13 @@
 <?php
 
-namespace KingStarter\LaravelSaml;
+namespace AshleyUpson\LumenSaml;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Config;
-use KingStarter\LaravelSaml\Console\EncodeAssertionUrlCommand;
+use AshleyUpson\LumenSaml\Console\EncodeAssertionUrlCommand;
 
-class LaravelSamlServiceProvider extends ServiceProvider
+class LumenSamlServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

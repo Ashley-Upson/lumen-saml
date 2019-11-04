@@ -1,13 +1,13 @@
 {
-    "name": "kingstarter/laravel-saml",
-    "description": "SAML support to make a laravel application to both a SAML IDP and a SAML SP.",
-    "keywords": ["laravel", "saml", "illuminate", "auth", "acl", "login", "sso", "idp", "sp"],
+    "name": "Ashley-Upson/lumen-saml",
+    "description": "A Lumen 5.4 / 5.5 SAML plugin that transforms laravel into an IDP - a fork from kingstarter/laravel/saml.",
+    "keywords": ["lumen", "saml", "illuminate", "auth", "acl", "login", "sso", "idp", "sp"],
     "license": "MIT",
     "version": "dev-master",
     "authors": [
         {
-            "name": "Steve Hegenbart",
-            "email": "steve.hegenbart@kingstarter.de"
+            "name": "Ashley Upson",
+            "email": "ashley@aupson.co.uk"
         }
     ],
     "require": {
@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "KingStarter\\LaravelSaml\\": "src"
+            "AshleyUpson\\LumenSaml\\": "src"
         }
     },
     "extra": {
         "laravel": {
           "providers": [
-            "KingStarter\\LaravelSaml\\LaravelSamlServiceProvider"
+            "AshleyUpson\\LumenSaml\\LaravelSamlServiceProvider"
           ]
         }
     }

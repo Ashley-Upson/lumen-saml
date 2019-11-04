@@ -1,6 +1,6 @@
 <?php
 
-namespace KingStarter\LaravelSaml\Console;
+namespace AshleyUpson\LumenSaml\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\App;
@@ -16,7 +16,7 @@ class EncodeAssertionUrlCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'laravel-saml:encodeurl
+    protected $signature = 'lumen-saml:encodeurl
                     {url? : URL to encode}';
 
     /**
@@ -62,7 +62,7 @@ class EncodeAssertionUrlCommand extends Command
     {
         $this->info($this->getDescription());
         $this->warn('Usage: ');
-        $this->line('   laravel-saml:encodeurl url');
+        $this->line('   lumen-saml:encodeurl url');
         $this->line('');
         $this->warn('Arguments:');
         $this->line('   url - The URL to encode');
