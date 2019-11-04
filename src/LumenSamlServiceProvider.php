@@ -41,7 +41,7 @@ class LumenSamlServiceProvider extends ServiceProvider
         if ($this->app instanceof LumenApplication && $this->app->runningInConsole()) {
             // Publishing configurations
             $this->publishes([
-                __DIR__ . '/config/saml.php' => config_path('saml.php'),
+                __DIR__ . '/config/saml.php' => './config/saml.php',
             ], 'saml_config');
             
             // Create storage/saml directory
