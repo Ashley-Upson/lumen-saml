@@ -3,7 +3,7 @@
 namespace AshleyUpson\LumenSaml;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\Application as LaravelApplication;
+use Laravel\Lumen\Application as LumenApplication;
 use Config;
 use AshleyUpson\LumenSaml\Console\EncodeAssertionUrlCommand;
 
@@ -38,7 +38,7 @@ class LumenSamlServiceProvider extends ServiceProvider
      */
     protected function bootInConsole()
     {
-        if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
+        if ($this->app instanceof LumenApplication && $this->app->runningInConsole()) {
             // Publishing configurations
             $this->publishes([
                 __DIR__ . '/config/saml.php' => config_path('saml.php'),
