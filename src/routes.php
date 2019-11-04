@@ -7,7 +7,7 @@
 Route::group([
         'namespace' => '\AshleyUpson\LumenSaml\Http\Controllers'
     ], function () {
-        Route::get('/saml/idp/metadata', 'SamlIdpController@metadata')->name('saml.idp.metadata');
+        Route::get('/saml/idp/metadata', 'SamlIdpController@metadata');
     }
 );
 
