@@ -80,7 +80,7 @@ class LaravelSamlServiceProvider extends ServiceProvider
      */
     protected function loadPackageRoutes()
     {
-        if (Config::get('saml.use_package_routes')) {
+        if (config('saml.use_package_routes')) {
             $this->loadRoutesFrom(__DIR__ . '/routes.php');
         }
     }
